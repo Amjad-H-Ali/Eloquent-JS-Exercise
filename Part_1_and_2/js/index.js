@@ -22,3 +22,10 @@ for (let i = 20; ; i ++) {
 		break;
 	}
 }
+
+
+// Looping Triangle (One Loop)
+for (let line = '#'; line.length <=8; line += '#') {
+	console.log(line);
+}
+
