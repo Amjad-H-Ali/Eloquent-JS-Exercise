@@ -29,3 +29,19 @@ for (let line = '#'; line.length <=8; line += '#') {
 	console.log(line);
 }
 
+
+//FizzBuzz
+for (let i = 1; i <= 100; i ++) {
+	let output = '';
+
+	if (i % 3 === 0) output += 'Fizz';
+	if (i % 5 === 0) output += 'Buzz';
+	// When none of the above conditions are true, output remains "", thus evaluating to False
+	// When left side of OR operatetor is false, it will evaluate to right side.
+	console.log(output || i);
+}
+
+
+
+
+
