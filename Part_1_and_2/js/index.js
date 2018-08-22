@@ -106,6 +106,27 @@ console.log(countBs('Bunny Believe Because BabBle Board'));
 
 
 
+// Given a number, find a sequence of addition by 5 and multiplying by 3 that finds that number
+// Recursive
+
+const findSolution = (target) => {
+	const find = (start, history) => {
+		if (start === target) return history;
+
+		else if (start > target) return null;
+
+		else
+			return  find(start + 5, `( ${history} + 5)`) ||
+					find(start * 3, `( ${history} * 3)`);
+	}
+
+	return find(1, '1');
+}
+
+
+console.log(findSolution(24));
+
+
 
 
 
