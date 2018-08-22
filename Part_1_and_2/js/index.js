@@ -58,5 +58,47 @@ for (let i = 0; i < size; i ++ ) {
 console.log(board);
 
 
+// Minimum
+
+const min = (num1, num2) => {
+
+	return num1 < num2 ? num1 : num2;
+}
+
+console.log(min(5, 90));
+
+
+// Recursion
+
+const isEven = (number) => {
+
+	if (number === 0) return true;
+
+	else if (number === 1) return false;
+
+	else if (number < 0) return isEven(-number)
+
+	return isEven(number - 2);
+}
+
+
+console.log(isEven(75));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
