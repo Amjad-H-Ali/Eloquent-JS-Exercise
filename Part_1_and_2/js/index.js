@@ -85,6 +85,25 @@ const isEven = (number) => {
 console.log(isEven(75));
 
 
+// Bean Counting
+
+const countBs = (string) => {
+
+	return countChar(string, "B");
+}
+
+const countChar = (string, letter) => {
+	let count = 0;
+
+	for (let i = string.length - 1; i >= 0; i --) {
+		if (string.charAt(i) === letter) count ++;
+	}
+
+	return count;
+}
+
+console.log(countBs('Bunny Believe Because BabBle Board'));
+
 
 
 
